@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Заявка на съёмку — А. Нарижная</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<nav>
+<a class="nav-logo" href="index.html">А. Нарижная</a>
+<ul class="nav-links">
+<li><a href="index.html">Главная</a></li>
+<li><a href="portfolio.html">Портфолио</a></li>
+<li><a href="services.html">Услуги</a></li>
+<li><a href="about.html">Обо мне</a></li>
+<li><a href="blog.html">Блог</a></li>
+<li><a href="contact.html">Контакты</a></li>
+<li><a href="booking.html">Заявка</a></li>
+<li class="mobile-auth-divider"></li>
+<li class="mobile-auth"><a href="login.html">Войти</a></li>
+<li class="mobile-auth"><a href="register.html">Регистрация</a></li>
+</ul>
+<div class="nav-auth">
+<a href="login.html">Войти</a>
+<a class="btn-nav" href="register.html">Регистрация</a>
+</div>
+<div class="burger"><span></span><span></span><span></span></div>
+</nav>
+<section class="booking-hero page-content">
+<div class="booking-hero-inner">
+<p class="section-subtitle moved-inline-booking-14">Забронировать</p>
+<h1 class="section-title moved-inline-booking-15">
+ Заявка на<br/><em>съёмку</em>
+</h1>
+</div>
+</section>
+<section class="booking-section">
+<div class="booking-info">
+<h2 class="reveal">Как проходит<br/>сотрудничество</h2>
+<p class="reveal">Заполните форму, и я свяжусь с вами в течение 24 часов. Обсудим детали, определим локацию и выберем удобную дату.</p>
+<div class="steps">
+<div class="step reveal-left">
+<div class="step-num">1</div>
+<div class="step-text">
+<h4>Заявка</h4>
+<p>Вы оставляете контакты и предпочтения</p>
+</div>
+</div>
+<div class="step reveal-left">
+<div class="step-num">2</div>
+<div class="step-text">
+<h4>Звонок или встреча</h4>
+<p>Обсуждаем идеи, бюджет и сроки</p>
+</div>
+</div>
+<div class="step reveal-left">
+<div class="step-num">3</div>
+<div class="step-text">
+<h4>Подтверждение</h4>
+<p>Вы вносите предоплату 30% — дата закрепляется</p>
+</div>
+</div>
+<div class="step reveal-left">
+<div class="step-num">4</div>
+<div class="step-text">
+<h4>Съёмка</h4>
+<p>Творим и получаем удовольствие</p>
+</div>
+</div>
+</div>
+<div class="booking-note reveal">
+<p>*Для свадебной съёмки желательно бронировать за 2-3 месяца до даты.*</p>
+</div>
+</div>
+<div class="booking-form-wrap reveal-right">
+<h3>Оставьте заявку</h3>
+<p>Заполните форму, и я свяжусь с вами</p>
+<div class="msg" id="bookingFormMsg"></div>
+<form id="bookingRequestForm" novalidate="">
+<div class="form-row">
+<div class="form-group">
+<label for="name">Ваше имя *</label>
+<input id="name" name="name" placeholder="Иван" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">Email *</label>
+<input id="email" name="email" placeholder="ivan@example.com" required="" type="email"/>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label for="phone">Телефон *</label>
+<input id="phone" name="phone" placeholder="+7 (___) ___-__-__" required="" type="tel"/>
+</div>
+<div class="form-group">
+<label for="shootType">Тип съёмки *</label>
+<select id="shootType" name="shootType" required="">
+<option value="">Выберите</option>
+<option>Портрет</option>
+<option>Свадьба</option>
+<option>Семейная</option>
+<option>Love Story</option>
+<option>Другое</option>
+</select>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label for="date">Предпочтительная дата</label>
+<input autocomplete="off" id="date" inputmode="numeric" name="date" pattern="\\d{2}\\.\\d{2}\\.\\d{4}" placeholder="20.09.2026" title="Введите дату в формате ДД.ММ.ГГГГ" type="text"/>
+</div>
+<div class="form-group">
+<label for="duration">Длительность</label>
+<select id="duration" name="duration">
+<option value="">—</option>
+<option>1 час</option>
+<option>2 часа</option>
+<option>4 часа</option>
+<option>Полный день (8+ часов)</option>
+</select>
+</div>
+</div>
+<div class="form-group">
+<label>Предпочитаете как получить фото? *</label>
+<div class="radio-group" required="">
+<label><input name="delivery" required="" type="radio" value="Онлайн-галерея"/> Онлайн-галерея</label>
+<label><input name="delivery" type="radio" value="USB-флешка"/> USB-флешка</label>
+<label><input name="delivery" type="radio" value="Оба варианта"/> Оба варианта</label>
+</div>
+</div>
+<div class="form-group">
+<label for="message">Ваши пожелания или идеи</label>
+<textarea id="message" name="message" placeholder="Расскажите, какой результат вы хотите получить..."></textarea>
+</div>
+<button class="btn btn-primary moved-inline-booking-16" type="submit">Отправить заявку →</button>
+</form>
+</div>
+</section>
+<div class="modal" id="successModal">
+<div class="modal-content">
+<div class="check">✓</div>
+<h4>Заявка отправлена!</h4>
+<p>Спасибо за доверие. Я свяжусь с вами в ближайшее время для обсуждения деталей.</p>
+<button class="btn btn-outline" id="closeModalBtn">Закрыть</button>
+</div>
+</div>
+<footer>
+<div class="footer-grid">
+<div class="footer-brand">
+<span class="logo">А. Нарижная</span>
+<p>Фотограф в Москве. Портреты, свадьбы, семейные съёмки. Ловлю настоящие моменты вашей жизни.</p>
+</div>
+<div class="footer-col">
+<h4>Страницы</h4>
+<ul>
+<li><a href="index.html">Главная</a></li>
+<li><a href="portfolio.html">Портфолио</a></li>
+<li><a href="services.html">Услуги</a></li>
+<li><a href="about.html">Обо мне</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Прочее</h4>
+<ul>
+<li><a href="blog.html">Блог</a></li>
+<li><a href="contact.html">Контакты</a></li>
+<li><a href="booking.html">Заявка</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Контакты</h4>
+<ul>
+<li><a href="tel:+79991234567">+7 (999) 797-16-67</a></li>
+<li><a href="mailto:ivan@sokolov.photo">narizh@photo</a></li>
+<li><a href="https://2gis.ru/moscow">Москва, Россия</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Александра Нарижная. Все права защищены.</p>
+<div class="social-links">
+<a href="https://www.instagram.com/trueyou.ph/">Instagram</a>
+<a href="https://t.me/narizhphoto">Telegram</a>
+</div>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

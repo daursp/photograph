@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Регистрация — А. Нарижная</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<nav>
+<a class="nav-logo" href="index.html">А. Нарижная</a>
+<ul class="nav-links">
+<li><a href="index.html">Главная</a></li>
+<li><a href="portfolio.html">Портфолио</a></li>
+<li><a href="services.html">Услуги</a></li>
+<li><a href="about.html">Обо мне</a></li>
+<li><a href="blog.html">Блог</a></li>
+<li><a href="contact.html">Контакты</a></li>
+<li><a href="booking.html">Заявка</a></li>
+<li class="mobile-auth-divider"></li>
+<li class="mobile-auth"><a href="login.html">Войти</a></li>
+<li class="mobile-auth"><a href="register.html">Регистрация</a></li>
+</ul>
+<div class="nav-auth">
+<a href="login.html">Войти</a>
+<a class="btn-nav" href="register.html">Регистрация</a>
+</div>
+<div class="burger"><span></span><span></span><span></span></div>
+</nav>
+<section class="register-hero page-content">
+<div class="register-hero-inner">
+<p class="section-subtitle moved-inline-register-30">Присоединяйтесь</p>
+<h1 class="section-title moved-inline-register-31">
+      Создать<br/><em>аккаунт</em>
+</h1>
+</div>
+</section>
+<section class="register-section">
+<div class="register-info reveal">
+<h3>Почему стоит<br/>зарегистрироваться?</h3>
+<p>Создайте аккаунт, чтобы получить доступ к дополнительным возможностям и персонализированному сервису.</p>
+</div>
+<div class="register-form-wrap reveal-right">
+<h2>Регистрация</h2>
+<p>Заполните форму, чтобы создать аккаунт</p>
+<div class="msg" id="registerMsg"></div>
+<form id="registerForm" novalidate="">
+<div class="form-group">
+<label for="fullname">Полное имя *</label>
+<input id="fullname" name="fullname" placeholder="Иван Иванов" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">Email *</label>
+<input id="email" name="email" placeholder="ivan@example.com" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="phone">Телефон</label>
+<input id="phone" name="phone" placeholder="+7 (___) ___-__-__" type="tel"/>
+</div>
+<div class="form-group">
+<label for="password">Пароль *</label>
+<input id="password" name="password" placeholder="Минимум 6 символов" required="" type="password"/>
+<div class="password-strength">
+<div class="strength-bar">
+<div class="strength-fill" id="strengthFill"></div>
+</div>
+<span class="strength-text" id="strengthText"></span>
+</div>
+</div>
+<div class="form-group">
+<label for="password2">Подтверждение пароля *</label>
+<input id="password2" name="password2" placeholder="Повторите пароль" required="" type="password"/>
+</div>
+<button class="btn btn-primary" type="submit">Зарегистрироваться →</button>
+<div class="form-footer">
+<p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+</div>
+</form>
+</div>
+</section>
+<footer>
+<div class="footer-grid">
+<div class="footer-brand">
+<span class="logo">А. Нарижная</span>
+<p>Фотограф в Москве. Портреты, свадьбы, семейные съёмки. Ловлю настоящие моменты вашей жизни.</p>
+</div>
+<div class="footer-col">
+<h4>Страницы</h4>
+<ul>
+<li><a href="index.html">Главная</a></li>
+<li><a href="portfolio.html">Портфолио</a></li>
+<li><a href="services.html">Услуги</a></li>
+<li><a href="about.html">Обо мне</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Прочее</h4>
+<ul>
+<li><a href="blog.html">Блог</a></li>
+<li><a href="contact.html">Контакты</a></li>
+<li><a href="booking.html">Заявка</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Контакты</h4>
+<ul>
+<li><a href="tel:+79991234567">+7 (999) 797-16-67</a></li>
+<li><a href="mailto:ivan@sokolov.photo">narizh@photo</a></li>
+<li><a href="https://2gis.ru/moscow">Москва, Россия</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Александра Нарижная. Все права защищены.</p>
+<div class="social-links">
+<a href="https://www.instagram.com/trueyou.ph/">Instagram</a>
+<a href="https://t.me/narizhphoto">Telegram</a>
+</div>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
